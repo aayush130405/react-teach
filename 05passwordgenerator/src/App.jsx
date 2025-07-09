@@ -30,7 +30,7 @@ function App() {
     passwordRef.current?.select()
   }
 
-  useEffect(() => {
+  useEffect(() => {   //useEffect use case => whenever dependencies are changed, re run the code inside
     generatePass()
   }, [length, numberAllowed, charAllowed])
 
