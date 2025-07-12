@@ -17,7 +17,7 @@ function App() {
     setFrom(to)
     setTo(from)
     setAmount(convertedAmount)
-    setConvertedAmount(amount)
+  setConvertedAmount(amount)
   }
 
   const convert = () => {
@@ -53,7 +53,7 @@ function App() {
               amount={convertedAmount}
               onCurrencyChange={(currency) => setTo(currency)}
               selectedCurrency={to}
-              amountDisabled
+              amountDisabled={true}
               />
             </div>
             <button
