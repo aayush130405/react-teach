@@ -8,6 +8,6 @@ export const ThemeContext = createContext({
 
 export const ThemeProvider = ThemeContext.Provider      //make the theme context available to all components
 
-export default function useTheme() {
+export default function useTheme() {        //hook to consume the context
     return useContext(ThemeContext)
 }
